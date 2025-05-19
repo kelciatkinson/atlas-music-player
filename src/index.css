@@ -3,5 +3,7 @@
 @theme {
   --color-grey: #64748B;
   --color-light-grey: #D5D7D8;
+  --color-light-blue: #F1F5F9;
+
   --font-sans: InterVariable, sans-serif;
 }

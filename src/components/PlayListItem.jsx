@@ -14,5 +14,33 @@ export default function PlayListItem({title, artist, length}) {
       </div>
       <p className="self-center font-medium text-sm text-(--color-grey)">8:02</p>
     </div>
+    <div className="flex justify-between px-0.25 pb-0.5">
+      <div className="">
+        <p className="font-medium">Fading Shadows</p>
+        <p className="font-medium text-sm text-(--color-grey) pb-1">The Emberlight</p>
+      </div>
+      <p className="self-center font-medium text-sm text-(--color-grey)">3:01</p>
+    </div>
+    <div className="flex justify-between px-0.25 pb-0.5">
+      <div className="">
+        <p className="font-medium">Cosmic Drift</p>
+        <p className="font-medium text-sm text-(--color-grey) pb-1">Solar Flare</p>
+      </div>
+      <p className="self-center font-medium text-sm text-(--color-grey)">5:01</p>
+    </div>
+    <div className="flex justify-between px-0.25 pb-0.5">
+      <div className="">
+        <p className="font-medium">Urban Serenade</p>
+        <p className="font-medium text-sm text-(--color-grey) pb-1">Midnight Groove</p>
+      </div>
+      <p className="self-center font-medium text-sm text-(--color-grey)">4:54</p>
+    </div>
+    <div className="flex justify-between px-0.25 pb-0.5">
+      <div className="">
+        <p className="font-medium">Whispers in the Wind</p>
+        <p className="font-medium text-sm text-(--color-grey) pb-1">Rust & Rain</p>
+      </div>
+      <p className="self-center font-medium text-sm text-(--color-grey)">6:13</p>
+    </div>
   </div>
 }

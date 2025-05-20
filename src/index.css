@@ -5,4 +5,16 @@
   --color-light-grey: #D5D7D8;
   --color-light-blue: #F1F5F9;
   --font-sans: InterVariable, sans-serif;
+  --color-text: #28436f;
+  --color-bg: #f4f7fc;
+  --color-bg-2: #CAD5E5;
+  --color-primary: #ffb732;
+  --color-secondary: #e69d98;
+  --color-accent: #e5dbb0;
+
+  --color-dark-text: #8faad6;
+  --color-dark-bg: #03060c;
+  --color-dark-primary: #cc8500;
+  --color-dark-secondary: #671e19;
+  --color-dark-accent: #9f8928;
 }

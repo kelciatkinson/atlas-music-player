@@ -1,6 +1,6 @@
 # Atlas Music Player
 
-Still a work in progress, but you can check out a live version [here](https://kelciatkinson.github.io/atlas-music-player/)!
+Still a work in progress, but you can check out a live version [here](https://atlas-music-player-kelciatkinson.netlify.app/)!
 ## Getting Started
 
 - Run `npm install` to install dependencies

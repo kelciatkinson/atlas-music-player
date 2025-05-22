@@ -1,5 +1,6 @@
 # Atlas Music Player
 
+Still a work in progress, but you can check out a live version [here](https://kelciatkinson.github.io/atlas-music-player/)!
 ## Getting Started
 
 - Run `npm install` to install dependencies

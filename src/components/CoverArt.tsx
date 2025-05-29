@@ -25,20 +25,22 @@ export default function CoverArt({ cover, songId }: CoverArtProps) {
     }
   };
 
-  const handleHover = () => {
-    if (songId) {
-      fetchLyrcis();
-    }
-    setShowLyrics(true);
-  }
+  // const handleHover = () => {
+  //   if (songId) {
+  //     fetchLyrcis();
+  //   }
+  //   setShowLyrics(true);
+  // }
+  // onMouseEnter={handleHover} 
+   // onMouseLeave={() => setShowLyrics(false)}
+   // {showLyrics && songId && (
+  //  <div>
+  //  {lyrics}
+  //</div>
+// )}
   console.log("Cover URL:", cover);
 
   return <div className="pb-5">
-    <img src={cover} alt="cover art" onMouseEnter={handleHover} onMouseLeave={() => setShowLyrics(false)} className="block w-100 rounded-lg"></img>
-    {showLyrics && songId && (
-      <div>
-        {lyrics}
-      </div>
-    )}
+    <img src={cover} alt="cover art" className="block w-100 rounded-lg"></img>
   </div>
 }

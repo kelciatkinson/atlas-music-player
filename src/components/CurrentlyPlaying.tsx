@@ -21,13 +21,15 @@ interface CurrentlyPlayingProps {
   onNext: () => void;
   canGoPrev: boolean;
   canGoNext: boolean;
+  isShuffled: boolean;
+  handleShuffle: () => void;
 }
 
-export default function CurrentlyPlaying({ currentSong, onPrev, onNext, canGoPrev, canGoNext }: CurrentlyPlayingProps) {
+export default function CurrentlyPlaying({ currentSong, onPrev, onNext, canGoPrev, canGoNext, isShuffled, handleShuffle }: CurrentlyPlayingProps) {
   return <div className="h-160 p-8 flex flex-col justify-between items-center w-full">
     <CoverArt cover={currentSong?.cover || ""} songId={currentSong?.id} />
     <SongTitle title={currentSong?.title || ""} artist={currentSong?.artist || ""} />
-    <PlayControls onNext={onNext} onPrev={onPrev} canGoNext={canGoNext} canGoPrev={canGoPrev} />
+    <PlayControls onNext={onNext} onPrev={onPrev} canGoNext={canGoNext} canGoPrev={canGoPrev} isShuffled={isShuffled} handleShuffle={handleShuffle} />
     <VolumeControls />
   </div>
 }

@@ -23,7 +23,7 @@ export default function MusicPlayer() {
   const canGoPrev = currentSongIndex > 0;
   const canGoNext = currentSongIndex < playlist.length - 1;
   const [isShuffled, setIsShuffed] = useState(false);
-  const [shuffledLog, setShuffledLog] = useState<number[]>([0]);
+
 
   // Fetches Playist from API
   useEffect(() => {
@@ -77,19 +77,29 @@ export default function MusicPlayer() {
       setCurrentSongIndex(currentSongIndex - 1);
     }
   };
+  // const [shuffledLog, setShuffledLog] = useState<number[]>([0]);
 
   const handleNext = () => {
-    if (currentSongIndex < playlist.length - 1) {
-      setCurrentSongIndex(currentSongIndex + 1);
+    console.log("The shuffle button is Active", isShuffled)
+    if (isShuffled) {
+      const randomSong = Math.floor(Math.random() * playlist.length);
+      setCurrentSongIndex(randomSong);
+    } else {
+      if (currentSongIndex < playlist.length - 1) {
+        setCurrentSongIndex(currentSongIndex + 1);
+      }
     }
-  }
+  };
+
+  const handleShuffle = () => {
+    setIsShuffed(!isShuffled);
+  };
 
 
   console.log("Showing main MusicPlayer content");
   return <div className="flex flex-col md:flex-row shadow-lg dark:shadow-(--color-dark-text) rounded-lg self-center w-4xl max-w-full bg-(--color-bg) dark:bg-(--color-dark-bg-2)">
-    <CurrentlyPlaying currentSong={currentSong} onPrev={handlePrev} onNext={handleNext} canGoPrev={canGoPrev} canGoNext={canGoNext} />
-    <div className="h-px w-0.5 md:w-0.5 md:h-auto bg-neutral-300"></div>
+    <CurrentlyPlaying currentSong={currentSong} onPrev={handlePrev} onNext={handleNext} canGoPrev={canGoPrev} canGoNext={canGoNext} isShuffled={isShuffled} handleShuffle={handleShuffle} />
+    <div className="h-px w-auto md:w-0.5 md:h-auto bg-neutral-300"></div>
     <Playlist playlist={playlist} currentSongIndex={currentSongIndex} onSongSelect={handleSongSelect} />
   </div>
 }
- 

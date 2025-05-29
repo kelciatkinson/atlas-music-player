@@ -9,21 +9,21 @@ interface CoverArtProps {
 }
 
 export default function CoverArt({ cover, songId }: CoverArtProps) {
-  const [lyrics, setLyrics] = useState<string>("");
-  const [showLyrics, setShowLyrics] = useState<boolean>(false);
+  // const [lyrics, setLyrics] = useState<string>("");
+  // const [showLyrics, setShowLyrics] = useState<boolean>(false);
 
 
-  const fetchLyrcis = async () => {
-    if (!songId) return;
-    try {
-      const res = await fetch(`/api/v1/lyrics/${songId}`);
-      const data = await res.json();
+  // const fetchLyrcis = async () => {
+  //   if (!songId) return;
+  //   try {
+  //     const res = await fetch(`/api/v1/lyrics/${songId}`);
+  //     const data = await res.json();
 
-      setLyrics(data.lyrics);
-    } catch (error) {
-      setLyrics("Lyrics not available.");
-    }
-  };
+  //     setLyrics(data.lyrics);
+  //   } catch (error) {
+  //     setLyrics("Lyrics not available.");
+  //   }
+  // };
 
   // const handleHover = () => {
   //   if (songId) {

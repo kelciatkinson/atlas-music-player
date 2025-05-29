@@ -88,7 +88,7 @@ export default function MusicPlayer() {
   console.log("Showing main MusicPlayer content");
   return <div className="flex flex-col md:flex-row shadow-lg dark:shadow-(--color-dark-text) rounded-lg self-center w-4xl max-w-full bg-(--color-bg) dark:bg-(--color-dark-bg-2)">
     <CurrentlyPlaying currentSong={currentSong} onPrev={handlePrev} onNext={handleNext} canGoPrev={canGoPrev} canGoNext={canGoNext} />
-    <div className="h-0.25 w-full md:w-0.25 md:h-auto self-stretch bg-neutral-300"></div>
+    <div className="h-px w-0.5 md:w-0.5 md:h-auto bg-neutral-300"></div>
     <Playlist playlist={playlist} currentSongIndex={currentSongIndex} onSongSelect={handleSongSelect} />
   </div>
 }

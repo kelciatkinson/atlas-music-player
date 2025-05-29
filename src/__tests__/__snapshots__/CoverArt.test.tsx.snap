@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CoverArt Snapshot Tests > renders with cover but no songId 1`] = `
+<div>
+  <div
+    class="pb-5"
+  >
+    <img
+      alt="cover art"
+      class="block w-100 rounded-lg"
+      src="https://example.com/cover.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`CoverArt Snapshot Tests > renders with empty cover and no songId 1`] = `
+<div>
+  <div
+    class="pb-5"
+  >
+    <img
+      alt="cover art"
+      class="block w-100 rounded-lg"
+    />
+  </div>
+</div>
+`;
+
+exports[`CoverArt Snapshot Tests > renders with empty cover string 1`] = `
+<div>
+  <div
+    class="pb-5"
+  >
+    <img
+      alt="cover art"
+      class="block w-100 rounded-lg"
+    />
+  </div>
+</div>
+`;
+
+exports[`CoverArt Snapshot Tests > renders with valid cover and songId 1`] = `
+<div>
+  <div
+    class="pb-5"
+  >
+    <img
+      alt="cover art"
+      class="block w-100 rounded-lg"
+      src="https://example.com/cover.jpg"
+    />
+  </div>
+</div>
+`;

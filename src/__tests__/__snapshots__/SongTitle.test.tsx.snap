@@ -1,0 +1,107 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SongTitle Snapshot Tests > renders with both empty 1`] = `
+<div>
+  <div
+    class="w-100 -mt-68 font-(--font-sans)"
+  >
+    <p
+      class="h-7 text-2xl font-bold text-(--color-text) dark:text-(--color-dark-text)"
+    />
+    <p
+      class="pt-2 text-(--color-secondary) dark:text-(--color-dark-secondary)"
+    />
+  </div>
+</div>
+`;
+
+exports[`SongTitle Snapshot Tests > renders with empty artist 1`] = `
+<div>
+  <div
+    class="w-100 -mt-68 font-(--font-sans)"
+  >
+    <p
+      class="h-7 text-2xl font-bold text-(--color-text) dark:text-(--color-dark-text)"
+    >
+      Mystery Song
+    </p>
+    <p
+      class="pt-2 text-(--color-secondary) dark:text-(--color-dark-secondary)"
+    />
+  </div>
+</div>
+`;
+
+exports[`SongTitle Snapshot Tests > renders with empty title 1`] = `
+<div>
+  <div
+    class="w-100 -mt-68 font-(--font-sans)"
+  >
+    <p
+      class="h-7 text-2xl font-bold text-(--color-text) dark:text-(--color-dark-text)"
+    />
+    <p
+      class="pt-2 text-(--color-secondary) dark:text-(--color-dark-secondary)"
+    >
+      Unknown Artist
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SongTitle Snapshot Tests > renders with long title and artist names 1`] = `
+<div>
+  <div
+    class="w-100 -mt-68 font-(--font-sans)"
+  >
+    <p
+      class="h-7 text-2xl font-bold text-(--color-text) dark:text-(--color-dark-text)"
+    >
+      This is a Very Long Song Title That Might Wrap to Multiple Lines
+    </p>
+    <p
+      class="pt-2 text-(--color-secondary) dark:text-(--color-dark-secondary)"
+    >
+      This is Also a Very Long Artist Name That Could Be A Little Lengthy
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SongTitle Snapshot Tests > renders with special characters 1`] = `
+<div>
+  <div
+    class="w-100 -mt-68 font-(--font-sans)"
+  >
+    <p
+      class="h-7 text-2xl font-bold text-(--color-text) dark:text-(--color-dark-text)"
+    >
+      Song with Special Characters: !@#$%^&*()
+    </p>
+    <p
+      class="pt-2 text-(--color-secondary) dark:text-(--color-dark-secondary)"
+    >
+      Artist & The Band (ft. Someone Else)
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SongTitle Snapshot Tests > renders with title and artist 1`] = `
+<div>
+  <div
+    class="w-100 -mt-68 font-(--font-sans)"
+  >
+    <p
+      class="h-7 text-2xl font-bold text-(--color-text) dark:text-(--color-dark-text)"
+    >
+      Beautiful Song
+    </p>
+    <p
+      class="pt-2 text-(--color-secondary) dark:text-(--color-dark-secondary)"
+    >
+      Amazing Artist
+    </p>
+  </div>
+</div>
+`;

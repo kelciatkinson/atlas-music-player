@@ -24,6 +24,10 @@ export default function MusicPlayer() {
   const canGoNext = currentSongIndex < playlist.length - 1;
   const [isShuffled, setIsShuffed] = useState(false);
 
+  if (loading) {
+    console.log("Showing Loading Skeleton");
+    return <LoadingSkeleton />;
+  }
 
   // Fetches Playist from API
   useEffect(() => {
@@ -63,10 +67,7 @@ export default function MusicPlayer() {
     }
   }, [currentSongIndex, playlist]);
 
-  if (loading) {
-    console.log("Showing Loading Skeleton");
-    return <LoadingSkeleton />;
-  }
+
   
   const handleSongSelect = (index: number) => {
     setCurrentSongIndex(index);
@@ -94,7 +95,6 @@ export default function MusicPlayer() {
   const handleShuffle = () => {
     setIsShuffed(!isShuffled);
   };
-
 
   console.log("Showing main MusicPlayer content");
   return <div className="flex flex-col md:flex-row shadow-lg dark:shadow-(--color-dark-text) rounded-lg self-center w-4xl max-w-full bg-(--color-bg) dark:bg-(--color-dark-bg-2)">

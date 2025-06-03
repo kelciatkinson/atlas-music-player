@@ -24,10 +24,6 @@ export default function MusicPlayer() {
   const canGoNext = currentSongIndex < playlist.length - 1;
   const [isShuffled, setIsShuffed] = useState(false);
 
-  if (loading) {
-    console.log("Showing Loading Skeleton");
-    return <LoadingSkeleton />;
-  }
 
   // Fetches Playist from API
   useEffect(() => {
@@ -67,7 +63,10 @@ export default function MusicPlayer() {
     }
   }, [currentSongIndex, playlist]);
 
-
+  if (loading) {
+    console.log("Showing Loading Skeleton");
+    return <LoadingSkeleton />;
+  }
   
   const handleSongSelect = (index: number) => {
     setCurrentSongIndex(index);
